@@ -1,0 +1,31 @@
+.button-component-wrapper {
+  border-radius: 3px;
+  overflow: hidden;
+
+  .button-component {
+    font-size: 13px;
+    color: $text;
+    padding: 10px 15px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    background: transparent;
+    .button-title {
+      font-family: 'Manrope', sans-serif;
+    }
+    &.big {
+      font-size: 18px;
+      padding: 15px 30px;
+    }
+
+    &.text-white {
+      .button-title {
+        color: $white;
+      }
+    }
+
+    &.outline-primary {
+      @include styleBorder;
+      background: $white-transparent;
+    }
+  }
+}

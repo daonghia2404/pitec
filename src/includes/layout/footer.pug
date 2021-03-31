@@ -1,0 +1,52 @@
+-
+  const dataNavFooter = [
+    { title: 'Home', link: '#' },
+    { title: 'Đối tác của Pitec', link: '#' },
+    { title: 'Pitec làm gì', link: '#' },
+    { title: 'Sản phẩm của Pitec', link: '#' },
+    { title: 'Ứng dụng của Pitec', link: '#' },
+    { title: 'Cách thức hoạt động', link: '#' },
+  ]
+
+footer.footer
+  .container 
+    .footer-wrapper 
+      .row 
+        .col-lg-3.col-md-6 
+          .footer-col 
+            .footer-logo 
+              img(src="./assets/images/logo-white.svg", alt="")
+        .col-lg-3.col-md-6 
+          .footer-col 
+            h4.footer-title Navigation
+            .footer-lists 
+              each item in dataNavFooter
+                a(href=`${item.link}`).list-item= item.title
+        .col-lg-3.col-md-6 
+          .footer-col 
+            h4.footer-title Location
+            .footer-lists 
+              a(href=`#`).list-item.d-flex.align-items-start
+                img(src="./assets/icons/icon-map-marker-white.svg", alt="")
+                |100000, Республика  Казахстан, г. Караганда, ул. Телевизионная 10
+              a(href=`#`).list-item.d-flex.align-items-start
+                img(src="./assets/icons/icon-phone-outline-white.svg", alt="")
+                |+7 (701) 77 76 811
+              a(href=`#`).list-item.d-flex.align-items-start
+                img(src="./assets/icons/icon-mail-white.svg", alt="")
+                |hello@gmail.com
+        .col-lg-3.col-md-6 
+          .footer-col 
+            h4.footer-title Follow Us
+            .footer-lists.social-network.d-flex.flex-wrap
+              a(href="#").list-item.facebook
+                img(src="./assets/icons/icon-facebook-fill-white.svg", alt="")
+              a(href="#").list-item
+                img(src="./assets/icons/icon-twitter-white.svg", alt="")
+              a(href="#").list-item
+                img(src="./assets/icons/icon-linkedin-white.svg", alt="")
+              a(href="#").list-item
+                img(src="./assets/icons/icon-pinterest-white.svg", alt="")
+  
+  .footer-bottom 
+    p © 2021 Pitec AI

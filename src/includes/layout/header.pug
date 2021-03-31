@@ -1,0 +1,23 @@
+-
+  const dataNavsLink = [
+    { title: 'Home', link: '#' },
+    { title: 'Liên hệ', link: '#' },
+    { title: 'Báo giá', link: '#' },
+  ]
+
+header.header 
+  .container 
+    .header-wrapper.d-flex.align-items-center.justify-content-center
+      .header-nav.d-flex.align-items-center 
+        each item in dataNavsLink 
+          a(href=`${item.link}`).nav-item= item.title 
+      
+      .header-logo 
+        img(src="./assets/images/logo.svg", alt="")
+      
+      .header-contact.d-flex.align-items-center
+        .header-btn-mobile 
+          img(src="./assets/icons/icon-bar-orange.svg", alt="")
+        include ../components/button.pug
+        +button({ type: 'button', title: 'Get in Touch', className: 'outline-primary' })
+      

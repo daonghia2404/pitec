@@ -1,0 +1,27 @@
+section.section.section-product 
+  .section-wrapper 
+    .owl-carousel#section-product-carousel.custom-style-carousel
+      each item in [1,2,3,4]
+        .item 
+          .product-item
+            .container
+              .item-wrapper.d-flex.flex-wrap.align-items-center
+                .item-info 
+                  img(src="./assets/images/bg-circle.png", alt="").item-bg-circle
+                  .item-circle= item 
+                  h4 Facial recognition
+
+                  .item-lists 
+                    .list-item.d-flex 
+                      img(src="./assets/icons/icon-arrow-right-orange.svg", alt="")
+                      |Một danh sách các đối tượng ảnh chân dung được lưu trong CSDL
+                    .list-item.d-flex 
+                      img(src="./assets/icons/icon-arrow-right-orange.svg", alt="")
+                      |Công nghệ nhận dạng khuôn mặt giúp kiểm tra xem đối tượng có xuất hiện trong một bức ảnh, một đoạn clip hoặc trong camera hay không
+
+                  .button-group.d-flex
+                    +button({type: 'button', title: 'Xem demo', className: 'outline-primary big'})
+
+                .item-image 
+                  img(src="./assets/images/image-technology-1.png", alt="")
+

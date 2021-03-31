@@ -1,0 +1,28 @@
+section.section-home-banner-video
+  video(src="./assets/videos/video-example.mp4" loop).section-video
+  img(src="./assets/images/image-banner.png", alt="").section-video-image-placeholder
+  .section-overlay
+
+  .container 
+    .section-wrapper 
+      img(src="./assets/icons/icon-play.svg", alt="").video-play-btn
+      .section-banner-content 
+        h1 PixFaceID
+        h3
+          |Hệ thống nhận diện khuôn mặt bằng 
+          br
+          |trí thông minh nhân tạo
+        .d-flex.button-group
+          include button.pug
+          +button({type: 'link', link: '#', title: 'Tìm hiểu thêm', className: 'outline-primary big text-white'})
+      
+      .section-banner-contact 
+        a(href="#").contact-item.d-flex.align-items-center.justify-content-center.instagram 
+          img(src="./assets/icons/icon-instagram-white.svg", alt="")
+        a(href="#").contact-item.d-flex.align-items-center.justify-content-center.phone 
+          img(src="./assets/icons/icon-phone-white.svg", alt="")
+        a(href="#").contact-item.d-flex.align-items-center.justify-content-center.facebook 
+          img(src="./assets/icons/icon-facebook-white.svg", alt="")
+        a(href="#").contact-item.d-flex.align-items-center.justify-content-center.what-apps 
+          img(src="./assets/icons/icon-what-apps-white.svg", alt="")
+

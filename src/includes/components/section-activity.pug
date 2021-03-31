@@ -1,0 +1,65 @@
+-
+  const dataActivity = [
+    {
+      title: 'On-Cloud API',
+      lists: [
+        'Đối tác kết nối đến API chạy trên cloud để sử dụng dịch vụ nhận dạng khuôn mặt, biển số, bóc tách thông tin CMND/CCCD',
+        'Sử dụng Rest API hoặc TCP Socket',
+        'Áp dụng cho đối tác là các nhà phát triển phần mềm quản trị',
+        'Giá tính theo block K-requests (VND 20,000-15,000-10,000/block)/service',
+      ],
+    },
+    {
+      title: 'On-Cloud Web-based',
+      lists: [
+        'Thiết bị đầu cuối là smartphone/tablet chạy android',
+        'Khách hàng sử dụng web-cloud để nhận diện, quản trị và xem báo cáo',
+        'Chưa xác định cách tính giá',
+      ],
+    },
+    {
+      title: 'On-Premise',
+      lists: [
+        'Cài đặt tại GPU Server của khách hàng',
+        'Có thể cần trang bị thêm thiết bị mở cổng',
+        'Giá license tính theo số GPU Card cài đặt và phần mềm cài trên thiết bị mở cổng',
+        'Giá tham khảo: 50tr/GPU Card và 5tr/Edge Device (jetson nano hoặc raspberry pi)',
+      ],
+    },
+    {
+      title: 'On-Edge',
+      lists: [
+        'Cài đặt tại các Edge Devices của khách hàng',
+        'Giá license tính theo Edge Center (Xavier AGX) và phần mềm cài trên EndpointEdge Device (Jetson Nano)',
+        'Giá tham khảo: 40tr/Edge Center và 5tr/Edge Device (jetson nano hoặc raspberry pi)',
+      ],
+    },
+    {
+      title: 'Endpoint on-edge Device',
+      lists: [
+        'Sử dung cloud api',
+        'Phần mềm cài trên Endpoint-Edge Device (Jetson Nano)',
+        'Giá tham khảo: 5tr/Edge Device (jetson nano) + service price (block K-requests)',
+      ],
+    },
+  ]
+
+section.section.section-activity
+  .section-wrapper 
+    img.bg-activity(src="./assets/images/bg-rope.png", alt="")
+    .container 
+      h3.section-des CÁch thức hoạt động
+      h2.section-title Các mô hình triển khai #[span Pitec]
+
+      .activity-lists.d-flex.flex-wrap.justify-content-center
+        each item, index in dataActivity
+          .list-item
+            .list-number= `0${index + 1} ----`
+            h5.list-title= item.title 
+
+            .lists-option
+              each list in item.lists
+                .option-item
+                  img(src="./assets/icons/icon-arrow-right-orange.svg", alt="")
+                  = list
+

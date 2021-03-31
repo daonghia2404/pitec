@@ -1,0 +1,20 @@
+-
+  const dataPartner = [
+    './assets/images/logo-partner-1.png',
+    './assets/images/logo-partner-2.png',
+    './assets/images/logo-partner-3.png',
+    './assets/images/logo-partner-4.png',
+    './assets/images/logo-partner-5.png',
+    './assets/images/logo-partner-6.png',
+  ]
+
+section.section-partner 
+  .container 
+    .section-wrapper 
+      .line
+      .owl-carousel#section-partner-carousel 
+        each item in dataPartner
+          .item 
+            .partner-item 
+              img(src=`${item}`, alt="")
+      .line

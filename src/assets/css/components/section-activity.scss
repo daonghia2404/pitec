@@ -1,0 +1,75 @@
+.section-activity {
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+  padding: 30px 15px;
+  .bg-activity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -15%);
+    width: 320px;
+    @media (max-width: 991px) {
+      width: 200px;
+    }
+    @media (max-width: 575px) {
+      width: 150px;
+    }
+  }
+  .section-wrapper {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 80px 0;
+    @include bgGradient2();
+    border-radius: 40px;
+    .section-title,
+    .section-des {
+      text-align: center;
+    }
+    .section-title {
+      margin-bottom: 50px;
+    }
+    .activity-lists {
+      .list-item {
+        background: $white;
+        border: 1px solid $border;
+        padding: 40px 30px;
+        flex: 0 0 calc(100% / 3 - 15px);
+        max-width: calc(100% / 3 - 15px);
+        margin: 0 7.5px;
+        margin-bottom: 30px;
+        @media (max-width: 991px) {
+          flex: 0 0 calc(100% / 2 - 15px);
+          max-width: calc(100% / 2 - 15px);
+        }
+        @media (max-width: 768px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+      .list-number {
+        color: $blue-text;
+        font-weight: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .list-title {
+        color: $black;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .lists-option {
+        .option-item {
+          margin-bottom: 20px;
+          font-size: 14px;
+          color: $gray-dark;
+          img {
+            width: 18px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

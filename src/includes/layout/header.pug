@@ -11,13 +11,14 @@ header.header
       .header-nav.d-flex.align-items-center 
         each item in dataNavsLink 
           a(href=`${item.link}`).nav-item= item.title 
+
+      .header-btn-mobile 
+        img(src="./assets/icons/icon-bar-orange.svg", alt="")
       
       .header-logo 
         img(src="./assets/images/logo.svg", alt="")
       
       .header-contact.d-flex.align-items-center
-        .header-btn-mobile 
-          img(src="./assets/icons/icon-bar-orange.svg", alt="")
         include ../components/button.pug
         +button({ type: 'button', title: 'Get in Touch', className: 'outline-primary' })
       

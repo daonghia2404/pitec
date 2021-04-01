@@ -4,8 +4,7 @@ section.section-home-banner-video {
   .section-video-image-placeholder,
   .section-overlay,
   .video-play-btn,
-  .section-banner-content,
-  .section-banner-contact {
+  .section-banner-content {
     transition: 0.5s ease;
   }
 
@@ -15,8 +14,7 @@ section.section-home-banner-video {
     .section-overlay,
     .video-play-btn,
     .section-wrapper,
-    .section-banner-content,
-    .section-banner-contact {
+    .section-banner-content {
       opacity: 0;
       pointer-events: none;
     }
@@ -98,54 +96,6 @@ section.section-home-banner-video {
         font-weight: 400;
         line-height: 1.8;
         margin-bottom: 30px;
-      }
-    }
-
-    .section-banner-contact {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translate(50%, -50%);
-
-      @media (max-width: 768px) {
-        position: relative;
-        top: unset;
-        right: unset;
-        transform: none;
-        display: flex;
-        margin-top: 30px;
-      }
-
-      .contact-item {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-
-        @media (max-width: 768px) {
-          margin: 0 15px;
-        }
-
-        &:not(:last-of-type) {
-          margin-bottom: 25px;
-        }
-
-        &.instagram {
-          background: $pink;
-        }
-
-        &.phone {
-          background: $blue-dark;
-        }
-
-        &.facebook {
-          background: $blue;
-        }
-
-        &.what-apps {
-          background: $green;
-        }
       }
     }
   }

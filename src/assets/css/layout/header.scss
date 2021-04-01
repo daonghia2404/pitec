@@ -31,15 +31,8 @@ header.header {
       top: 50%;
       transform: translate(-50%, -50%);
       width: 100px;
-      @media (max-height: 575px) {
+      @media (max-width: 575px) {
         width: 80px;
-      }
-
-      @media (max-width: 991px) {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
       }
 
       img {
@@ -96,6 +89,12 @@ header.header {
 
     .header-contact {
       margin-left: auto;
+      @media (max-width: 425px) {
+        .button-component {
+          font-size: 10px;
+          padding: 10px;
+        }
+      }
     }
   }
 }

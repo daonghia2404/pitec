@@ -15,38 +15,42 @@ footer.footer
         .col-lg-3.col-md-6 
           .footer-col 
             .footer-logo 
-              img(src="./assets/images/logo-white.svg", alt="")
+              img(src="./assets/images/logo.png", alt="")
         .col-lg-3.col-md-6 
           .footer-col 
             h4.footer-title Navigation
             .footer-lists 
               each item in dataNavFooter
-                a(href=`${item.link}`).list-item= item.title
-        .col-lg-3.col-md-6 
-          .footer-col 
+                a(href=`${item.link}`).list-item.link= item.title
+        .col-lg-3.col-md-6.border-col
+          .footer-col
             h4.footer-title Location
             .footer-lists 
               a(href=`#`).list-item.d-flex.align-items-start
-                img(src="./assets/icons/icon-map-marker-white.svg", alt="")
+                img(src="./assets/icons/icon-map-marker-red.svg", alt="")
                 |100000, Республика  Казахстан, г. Караганда, ул. Телевизионная 10
               a(href=`#`).list-item.d-flex.align-items-start
-                img(src="./assets/icons/icon-phone-outline-white.svg", alt="")
+                img(src="./assets/icons/icon-phone-red.svg", alt="")
                 |+7 (701) 77 76 811
               a(href=`#`).list-item.d-flex.align-items-start
-                img(src="./assets/icons/icon-mail-white.svg", alt="")
+                img(src="./assets/icons/icon-mail-red.svg", alt="")
                 |hello@gmail.com
         .col-lg-3.col-md-6 
           .footer-col 
             h4.footer-title Follow Us
             .footer-lists.social-network.d-flex.flex-wrap
               a(href="#").list-item.facebook
-                img(src="./assets/icons/icon-facebook-fill-white.svg", alt="")
+                img(src="./assets/icons/icon-facebook-blue.svg", alt="")
               a(href="#").list-item
-                img(src="./assets/icons/icon-twitter-white.svg", alt="")
+                img(src="./assets/icons/icon-twitter-blue.svg", alt="")
               a(href="#").list-item
-                img(src="./assets/icons/icon-linkedin-white.svg", alt="")
+                img(src="./assets/icons/icon-linkedin-blue.svg", alt="")
               a(href="#").list-item
-                img(src="./assets/icons/icon-pinterest-white.svg", alt="")
+                img(src="./assets/icons/icon-pinterest-red.svg", alt="")
   
   .footer-bottom 
-    p © 2021 Pitec AI
+    .container
+      .footer-bottom-wrapper
+        a(href="#top").button-on-top
+          img(src="./assets/icons/icon-angle-up-white.svg", alt="")
+        p © 2021 Pitec AI

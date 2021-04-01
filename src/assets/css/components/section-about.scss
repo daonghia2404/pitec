@@ -39,6 +39,11 @@
       @include bgGradient();
       border-bottom-left-radius: 150px;
       padding: 140px 15px;
+
+      @media (max-width: 991px) {
+        border-bottom-left-radius: 0px;
+      }
+
       @media (max-width: 575px) {
         padding: 80px 15px;
       }

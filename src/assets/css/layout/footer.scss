@@ -1,8 +1,13 @@
 footer.footer {
-  background: $blue-text;
+  background: $footer;
+
   .footer-wrapper {
-    padding: 55px 0 15px;
+    padding: 55px 0 0;
+    @media (max-width: 767px) {
+      padding-bottom: 45px;
+    }
   }
+
   .footer-logo {
     width: 130px;
 
@@ -10,14 +15,21 @@ footer.footer {
       width: 100%;
     }
   }
-
+  .col-lg-3 {
+    &.border-col {
+      border-left: 1px solid rgba(0, 0, 0, 0.05);
+      border-right: 1px solid rgba(0, 0, 0, 0.05);
+      @media (max-width: 991px) {
+        border: none;
+      }
+    }
+  }
   .footer-col {
     margin-bottom: 30px;
   }
 
   .footer-title {
     font-size: 18px;
-    color: $white;
     font-weight: bold;
     margin-bottom: 25px;
   }
@@ -25,11 +37,19 @@ footer.footer {
   .footer-lists {
     .list-item {
       display: block;
-      color: $white;
+      color: #828282;
       margin-bottom: 15px;
       font-size: 12px;
       font-weight: 400;
       line-height: 2;
+      &.link {
+        transition: 0.3s ease;
+        &:hover {
+          transform: translateX(5px);
+          color: $red;
+          font-weight: 700;
+        }
+      }
 
       img {
         transform: translateY(5px);
@@ -41,11 +61,13 @@ footer.footer {
     &.social-network {
       .list-item {
         margin-right: 15px;
+
         &.facebook {
           img {
             width: 10px;
           }
         }
+
         img {
           transform: none;
           width: 20px;
@@ -55,15 +77,38 @@ footer.footer {
   }
 
   .footer-bottom {
-    border-top: 1px solid $white-transparent;
-    padding: 24px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 
-    p {
-      font-size: 12px;
-      color: $white;
-      text-align: center;
-      letter-spacing: 2px;
-      margin-bottom: 0;
+    .footer-bottom-wrapper {
+      position: relative;
+      padding: 40px 0 20px;
+      p {
+        font-size: 12px;
+        text-align: center;
+        color: #828282;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+      }
+
+      .button-on-top {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 0;
+        box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+        background: $blue-text;
+        right: 50%;
+        transform: translate(50%, -50%);
+        z-index: 3;
+
+        img {
+          width: 15px;
+          margin: auto;
+        }
+      }
     }
   }
 }

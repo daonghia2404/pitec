@@ -51,6 +51,11 @@ section.section-product {
               z-index: -1;
             }
           }
+          .button-group {
+            @media(max-width: 575px) {
+              justify-content: center;
+            }
+          }
           h4 {
             font-size: 30px;
             color: $black;

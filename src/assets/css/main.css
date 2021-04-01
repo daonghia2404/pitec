@@ -654,6 +654,9 @@ section.section-product {
         background: linear-gradient(90deg, #F89C49 0%, #EF4537 100%);
         border-radius: 50%;
         z-index: -1; }
+    @media (max-width: 575px) {
+      section.section-product .section-wrapper .product-item .item-wrapper .item-info .button-group {
+        justify-content: center; } }
     section.section-product .section-wrapper .product-item .item-wrapper .item-info h4 {
       font-size: 30px;
       color: #000;
@@ -955,11 +958,11 @@ footer.footer {
     width: 130px; }
     footer.footer .footer-logo img {
       width: 100%; }
-  footer.footer .col-lg-3.border-col {
+  footer.footer .border-col {
     border-left: 1px solid rgba(0, 0, 0, 0.05);
     border-right: 1px solid rgba(0, 0, 0, 0.05); }
     @media (max-width: 991px) {
-      footer.footer .col-lg-3.border-col {
+      footer.footer .border-col {
         border: none; } }
   footer.footer .footer-col {
     margin-bottom: 30px; }

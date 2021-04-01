@@ -51,11 +51,15 @@ section.section-ung-dung {
     .image-item {
       flex: 0 0 calc(100% / 3 - 15px);
       max-width: calc(100% / 3 - 15px);
-      margin-bottom: 15px;
 
       @media (max-width: 768px) {
         flex: 0 0 100%;
         max-width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid $border;
+        }
       }
       img {
         width: 100%;

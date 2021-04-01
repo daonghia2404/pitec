@@ -2,6 +2,7 @@ window.onload = () => {
   bannerVideo.init()
   owlCarousel.init()
   menu.init()
+  buttonOnTop.init()
 }
 
 const bannerVideo = {
@@ -88,6 +89,19 @@ const menu = {
 
     btn.addEventListener('click', () => {
       mainMenu.classList.toggle('active')
+    })
+  }
+}
+
+const buttonOnTop = {
+  init: function() {
+    this.configScroll()
+  },
+  configScroll: function() {
+    const btn = document.querySelector('a.button-on-top')
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) btn.classList.add('active')
+      else btn.classList.remove('active')
     })
   }
 }

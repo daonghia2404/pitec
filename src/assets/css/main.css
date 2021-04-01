@@ -421,6 +421,35 @@ section.section .section-title {
     .element-contact .contact-item.what-apps {
       background: #14AC51; }
 
+.button-on-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background: #3A66AF;
+  z-index: 5;
+  bottom: 29px;
+  right: 100px;
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: translateX(30px);
+  pointer-events: none; }
+  .button-on-top.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: unset; }
+  @media (max-width: 575px) {
+    .button-on-top {
+      width: 40px;
+      height: 40px;
+      right: 75px; } }
+  .button-on-top img {
+    width: 15px;
+    margin: auto; }
+
 section.section-home-banner-video {
   position: relative; }
   section.section-home-banner-video .section-video-image-placeholder,
@@ -687,12 +716,15 @@ section.section-ung-dung {
         margin-top: -80px; } }
   section.section-ung-dung .section-wrapper-bottom .image-item {
     flex: 0 0 calc(100% / 3 - 15px);
-    max-width: calc(100% / 3 - 15px);
-    margin-bottom: 15px; }
+    max-width: calc(100% / 3 - 15px); }
     @media (max-width: 768px) {
       section.section-ung-dung .section-wrapper-bottom .image-item {
         flex: 0 0 100%;
-        max-width: 100%; } }
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 15px; }
+        section.section-ung-dung .section-wrapper-bottom .image-item:not(:last-of-type) {
+          border-bottom: 1px solid #E2E2E2; } }
     section.section-ung-dung .section-wrapper-bottom .image-item img {
       width: 100%;
       border-top-left-radius: 20px;
@@ -970,19 +1002,3 @@ footer.footer {
         color: #828282;
         letter-spacing: 2px;
         margin-bottom: 0; }
-      footer.footer .footer-bottom .footer-bottom-wrapper .button-on-top {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        border-radius: 50%;
-        cursor: pointer;
-        top: 0;
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
-        background: #3A66AF;
-        right: 50%;
-        transform: translate(50%, -50%);
-        z-index: 3; }
-        footer.footer .footer-bottom .footer-bottom-wrapper .button-on-top img {
-          width: 15px;
-          margin: auto; }

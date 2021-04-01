@@ -89,26 +89,6 @@ footer.footer {
         letter-spacing: 2px;
         margin-bottom: 0;
       }
-
-      .button-on-top {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        border-radius: 50%;
-        cursor: pointer;
-        top: 0;
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
-        background: $blue-text;
-        right: 50%;
-        transform: translate(50%, -50%);
-        z-index: 3;
-
-        img {
-          width: 15px;
-          margin: auto;
-        }
-      }
     }
   }
 }

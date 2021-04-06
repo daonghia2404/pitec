@@ -1,0 +1,21 @@
+section.section.section-tuyen-dung
+  .section-wrapper 
+    .container 
+      h3.section-des tuyển dụng
+      h2.section-title Những vị trí mà PITEC còn trống
+      p.section-content Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until road
+
+    .section-main 
+      each item in [1,2,3]
+        .tuyen-dung-item.d-flex.flex-wrap
+          .tuyen-dung-content.d-flex.align-items-center.justify-content-center
+            .content-wrapper
+              .item-circle= item
+              h3.item-title Upper prior hundred links approach reedy
+              p.item-des Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until road, 
+              .button-group.d-flex
+                include button.pug
+                +button({ title: 'Chi tiết tuyển dụng', className: 'outline-primary big' })
+          .tuyen-dung-image 
+            img(src=`./assets/images/image-tuyen-dung-${item}.png`, alt="")
+        

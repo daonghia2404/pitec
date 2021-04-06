@@ -1,0 +1,54 @@
+section.section-about-contact 
+  .section-wrapper.d-flex.flex-wrap 
+    .section-item
+      img(src="./assets/icons/icon-map-marker-blue.svg", alt="").icon-about-contact
+      .section-content
+        h4.content-title Công ty cổ phần phát triển và đầu tư công nghệ tiên phong
+        .contact-item.d-flex.align-items-start 
+          .item-icon
+            img(src="./assets/icons/icon-map-marker-red.svg", alt="")
+          .item-content 
+            h5.item-title Our Office
+            p 
+              |91 E. Lexington Street
+              br
+              |Apt 688
+              br
+              |Gibsonia, PA 15044
+        .contact-item.d-flex.align-items-start 
+          .item-icon
+            img(src="./assets/icons/icon-mail-red.svg", alt="")
+          .item-content 
+            a(href="mailto: hello@gmail.com").item-title hello@gmail.com
+        .contact-item.d-flex.align-items-start 
+          .item-icon
+            img(src="./assets/icons/icon-phone-red.svg", alt="")
+          .item-content 
+            a(href="tel: 0666693456").item-title (01) 666 - 693 - 456
+
+    .section-item 
+      img(src="./assets/images/image-about-contact.png", alt="").image-about-contact
+
+  .section-wrapper.form
+    .container 
+      form(action="#" method="method").contact-form
+        h3.contact-title Liên hệ với chúng tôi ngay
+        .form-group.d-flex.flex-wrap.justify-content-between
+          .form-group-item
+            .form-item 
+              label Your name
+              input(type="text" placeholder="Your name")
+            .form-item 
+              label Your email
+              input(type="text" placeholder="Your email")
+
+          .form-group-item
+            .form-item
+              label Your message 
+              textarea(placeholder="White your message")
+              .button-group.d-flex
+                include button.pug
+                +button({ title: 'Gửi tin nhắn', className: 'outline-primary big' })
+
+
+          

@@ -1,0 +1,35 @@
+section.section.section-about-leader 
+  .section-wrapper
+    .container 
+      h3.section-des.text-center Về Pitec
+      h2.section-title.text-center Ban Lãnh Đạo Công Ty
+
+    .section-leader
+      .container
+        img(src="./assets/images/bg-dots.png", alt="").section-bg-dots
+        .section-leader-lists.d-flex.align-items-center.justify-content-center.flex-wrap
+          each item in [1,2,3]
+            .leader-item 
+              .item-avatar 
+                img(src="./assets/images/image-sample-avatar.png", alt="")
+              h6.item-name Nguyễn Lê Vinh
+              p.item-job Designer
+              .item-socials-list.d-flex.align-items-center.justify-content-center 
+                a(href="#")
+                  img(src="./assets/icons/icon-twitter-blue.svg", alt="")
+                a(href="#")
+                  img(src="./assets/icons/icon-basketball-red.svg", alt="")
+                a(href="#")
+                  img(src="./assets/icons/icon-box-white.svg", alt="")
+
+    .section-about-overview 
+      .container
+        .about-avatar-overview 
+          .avatar-main 
+            img(src="./assets/images/image-sample-avatar.png", alt="")
+            img(src="./assets/icons/icon-quote-red.svg", alt="").icon-quote
+          each item in [1,2,3,4,5,6,7]
+            .avatar-child(class=`child-${item}`)
+              img(src="./assets/images/image-sample-avatar.png", alt="")
+        h2.about-quote Chúng tôi luôn cố gắng xây dựng giá trị tốt đẹp nhất trong mắt khách hàng.
+        p.quote-author #[span Kerry Johnes] - Pitec JSC

@@ -1,0 +1,161 @@
+.section-about-contact {
+  .section-wrapper {
+    .section-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+      position: relative;
+      min-height: 1040px;
+
+      @media (max-width: 768px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-height: auto;
+      }
+
+      .icon-about-contact {
+        position: absolute;
+        left: 0;
+        top: 10%;
+      }
+
+      .image-about-contact {
+        width: 100%;
+      }
+
+      .section-content {
+        max-width: 490px;
+        margin: 80px auto;
+        padding: 0 15px;
+
+        .content-title {
+          font-size: 27px;
+          font-weight: 500;
+          color: $text;
+          margin-bottom: 50px;
+        }
+
+        .contact-item {
+          margin-bottom: 30px;
+
+          .item-icon {
+            flex: 0 0 30px;
+            max-width: 30px;
+            margin-right: 50px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .item-content {
+            .item-title {
+              font-size: 18px;
+              font-weight: bold;
+              color: $text;
+            }
+
+            p {
+              font-size: 18px;
+              color: $gray-content;
+              margin-top: 25px;
+            }
+          }
+        }
+      }
+
+    }
+
+    &.form {
+      background: $blue-light;
+      margin-top: -400px;
+
+      .contact-form {
+        position: relative;
+        margin-bottom: -150px;
+        transform: translateY(-150px);
+        background: #547DE4;
+        border-radius: 10px;
+        padding: 100px;
+
+        @media (max-width: 991px) {
+          padding: 50px;
+        }
+
+        @media (max-width: 575px) {
+          padding: 50px 30px;
+        }
+
+        .contact-title {
+          color: $white;
+          font-size: 40px;
+          margin-bottom: 50px;
+          font-weight: bold;
+          @media (max-width: 575px) {
+            font-size: 32px;
+          }
+        }
+
+        .form-group {
+          .form-group-item {
+            &:nth-of-type(1) {
+              flex: 0 0 38%;
+              max-width: 38%;
+            }
+
+            &:nth-of-type(2) {
+              flex: 0 0 59%;
+              max-width: 59%;
+            }
+            @media (max-width: 768px) {
+              flex: 0 0 100% !important;
+              max-width: 100% !important;
+              margin-bottom: 15px;
+            }
+
+          }
+          .form-item {
+            margin-bottom: 35px;
+
+            label {
+              font-weight: bold;
+              color: $white;
+              display: block;
+              font-size: 18px;
+              margin-bottom: 5px;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              @media (max-width: 575px) {
+                font-size: 16px;
+              }
+            }
+
+            input,
+            textarea {
+              border: none;
+              border-radius: 5px;
+              padding: 15px;
+              background: $white;
+              font-size: 16px;
+              width: 100%;
+              &::placeholder {
+                color: $placeholder;
+              }
+            }
+
+            textarea {
+              min-height: 230px;
+            }
+
+            .button-group {
+              margin-top: 30px;
+              .button-title {
+                color: $white !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

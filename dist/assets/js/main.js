@@ -11,18 +11,20 @@ const bannerVideo = {
   },
   configEvent: function() {
     const section = document.querySelector('.section-home-banner-video')
-    const btnPlay = section.querySelector('.video-play-btn')
-    const video = section.querySelector('.section-video')
+    if (section) {
+      const btnPlay = section.querySelector('.video-play-btn')
+      const video = section.querySelector('.section-video')
 
-    btnPlay.addEventListener('click', () => {
-      section.classList.add('play')
-      video.play()
-    })
+      btnPlay.addEventListener('click', () => {
+        section.classList.add('play')
+        video.play()
+      })
 
-    video.addEventListener('click', () => {
-      section.classList.remove('play')
-      video.pause()
-    })
+      video.addEventListener('click', () => {
+        section.classList.remove('play')
+        video.pause()
+      })
+    }
   }
 }
 

@@ -1,0 +1,29 @@
+.section-banner {
+  position: relative;
+  height: 220px;
+  @include centerImage;
+
+  .section-banner-overlay,
+  .section-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-banner-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+
+  .section-main {
+    z-index: 3;
+    h1 {
+      color: $white;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}

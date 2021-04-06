@@ -73,16 +73,36 @@ header.header {
         color: $text;
         margin-right: 50px;
         transition: 0.3s ease;
+        position: relative;
+        &:before {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          @include bgGradient3;
+          height: 2px;
+          width: 30px;
+          content: '';
+          opacity: 0;
+          transition: 0.3s ease;
+          @media (max-width: 991px) {
+            left: 15px;
+          }
+        }
 
         @media (max-width: 991px) {
           height: auto;
-          margin: 0 0 10px 0;
+          margin: 0 0 5px 0;
+          padding: 5px 0;
           width: 100%;
         }
 
         &:hover,
         &.active {
           color: $red;
+          &:before {
+            opacity: 1;
+          }
         }
       }
     }

@@ -1,0 +1,49 @@
+.section-chi-tiet-tuyen-dung {
+  padding: 60px 0;
+  .tuyen-dung-header {
+    margin-bottom: 50px;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+      h2 {
+        margin-bottom: 30px !important;
+        text-align: center;
+      }
+    }
+    h2 {
+      margin: 0;
+    }
+  }
+  .tuyen-dung-box {
+    border-radius: 10px;
+    overflow: hidden;
+    .box-header {
+      font-size: 18px;
+      color: $white;
+      padding: 30px;
+      @include bgGradient();
+      @media (max-width: 991px) {
+        padding: 30px 15px;
+      }
+    }
+    .box-content {
+      background: $footer;
+      p {
+        padding: 15px 30px;
+        font-size: 14px;
+        color: $gray-content;
+        margin-bottom: 0;
+        @media (max-width: 991px) {
+          padding: 15px;
+        }
+        &:not(:last-of-type) {
+          border-bottom: 1px solid $border;
+        }
+        span {
+          font-weight: 600;
+          color: $black;
+        }
+      }
+    }
+  }
+}

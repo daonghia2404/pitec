@@ -1,4 +1,8 @@
 mixin button(data)
   .button-component-wrapper
-    button.button-component.d-flex.align-items-center.justify-content-center(class=`${data.className}`)
-      span.button-title= data.title
+    if data.type === 'link'
+      a(href=`${data.link}` class=`${data.className}`).button-component.d-flex.align-items-center.justify-content-center
+        span.button-title= data.title
+    else
+      button.button-component.d-flex.align-items-center.justify-content-center(class=`${data.className}`)
+        span.button-title= data.title

@@ -1,0 +1,52 @@
+extends includes/layout/layout.pug
+block pages 
+  include includes/components/section-banner.pug
+  include includes/components/button.pug
+
+  +sectionBanner('Chi tiết tuyển dụng')
+
+  section.section.section-chi-tiet-tuyen-dung 
+    .container 
+      .section-wrapper
+        .tuyen-dung-header.d-flex.justify-content-between.align-items-center
+          h2 Tuyển trưởng phòng kinh doanh bán lẻ
+          +button({ title: 'Ứng tuyển ngay', className: 'big outline-primary' })
+
+        .tuyen-dung-main 
+          .row 
+            .col-lg-8
+              .tuyen-dung-content.style-editable 
+                h3.mt-0 Mô tả công việc
+                p - Nghiên cứu, nắm bắt xu hướng tại thị trường Mỹ và châu Âu
+                p - Sáng tạo và lên mô tả các ý tưởng đồ họa, kết hợp với designer để tạo ra các sản phẩm in ấn cho thị trường Mỹ và châu âu (như T-shirt, Quilt, Mug,...)
+                p - Viết nội dung quảng bá cho sản phẩm
+                p - Hỗ trợ thực hiện các công việc khác theo yêu cầu của cấp trên
+
+                h3 YÊU CẦU ỨNG VIÊN
+                p - Nữ từ 22-28 tuổi
+                p - Ngoại ngữ (tiếng Anh) hoặc Ielts 6.0+/ toeic 700+, hoặc trình độ tiếng Anh tương đương trở lên
+                p - Tốt nghiệp Các trường Đại học khối ngành Kinh tế, Ngoại Ngữ, Marketing, Ngoại thương, truyền thông, biên tập, biên dịch và các khối ngành liên quan
+                p - Có tinh thần trách nhiệm cao, sáng tạo, chủ động trong công việc, có khả năng sắp xếp công việc khoa học, hợp lý
+                p - Thành thạo sử dụng vi tính, google
+                p - Đam mê với lĩnh vực thiết kế, tư duy thẩm mỹ tốt
+
+                h3 CÁCH THỨC ỨNG TUYỂN
+                p Ứng viên nộp hồ sơ trực tuyến bằng cách bấm Ứng tuyển ngay dưới đây.
+
+                +button({ title: 'Ứng tuyển ngay', className: 'big outline-primary' })
+
+
+            .col-lg-4
+              .tuyen-dung-box 
+                .box-header Thông tin tuyển dụng
+                .box-content 
+                  p #[span Mức lương:] Thỏa thuận
+                  p #[span Hình thức làm việc:] Toàn thời gian
+                  p #[span Số lượng cần tuyển:] 2 người
+                  p #[span Chức vụ:] Trưởng phòng
+                  p #[span Yêu cầu kinh nghiệm:] + 5 năm
+                  p #[span Yêu cầu giới tính:]  Không yêu cầu
+                  p #[span Địa điểm làm việc:] Hà nội
+
+
+  include includes/components/section-contact.pug

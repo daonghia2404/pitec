@@ -942,6 +942,9 @@ section.section-ung-dung {
     margin: 15px 0 25px; }
   .section-tuyen-dung .section-main {
     margin-top: 70px; }
+  @media (max-width: 991px) {
+    .section-tuyen-dung .tuyen-dung-item:not(:last-of-type) {
+      border-bottom: 1px solid #E2E2E2; } }
   .section-tuyen-dung .tuyen-dung-item:nth-of-type(even) {
     flex-direction: row-reverse; }
   .section-tuyen-dung .tuyen-dung-image,
@@ -953,6 +956,9 @@ section.section-ung-dung {
       .section-tuyen-dung .tuyen-dung-content {
         flex: 0 0 100%;
         max-width: 100%; } }
+  @media (max-width: 991px) {
+    .section-tuyen-dung .tuyen-dung-image {
+      padding-bottom: 30px; } }
   .section-tuyen-dung .tuyen-dung-image img {
     width: 100%; }
   .section-tuyen-dung .tuyen-dung-content .item-circle {

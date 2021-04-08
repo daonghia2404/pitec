@@ -17,6 +17,11 @@
   }
 
   .tuyen-dung-item {
+    &:not(:last-of-type) {
+      @media (max-width: 991px) {
+        border-bottom: 1px solid $border;
+      }
+    }
     &:nth-of-type(even) {
       flex-direction: row-reverse;
     }
@@ -33,6 +38,9 @@
   }
 
   .tuyen-dung-image {
+    @media (max-width: 991px) {
+      padding-bottom: 30px;
+    }
     img {
       width: 100%;
     }

@@ -2,7 +2,7 @@
   overflow: hidden;
   position: relative;
   padding: 30px 15px;
-  .bg-activity {
+  .element-activity {
     position: absolute;
     top: 0;
     right: 0;
@@ -14,6 +14,17 @@
     @media (max-width: 575px) {
       width: 150px;
     }
+  }
+  .bg-activity {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .section-main {
+    position: relative;
+    z-index: 2;
   }
   .section-wrapper {
     max-width: 1290px;

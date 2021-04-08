@@ -772,18 +772,27 @@ section.section-ung-dung {
   overflow: hidden;
   position: relative;
   padding: 30px 15px; }
-  .section-activity .bg-activity {
+  .section-activity .element-activity {
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(0%, -15%);
     width: 320px; }
     @media (max-width: 991px) {
-      .section-activity .bg-activity {
+      .section-activity .element-activity {
         width: 200px; } }
     @media (max-width: 575px) {
-      .section-activity .bg-activity {
+      .section-activity .element-activity {
         width: 150px; } }
+  .section-activity .bg-activity {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    z-index: 1;
+    width: 100%; }
+  .section-activity .section-main {
+    position: relative;
+    z-index: 2; }
   .section-activity .section-wrapper {
     max-width: 1290px;
     margin: 0 auto;

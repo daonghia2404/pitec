@@ -46,20 +46,22 @@
 
 section.section.section-activity
   .section-wrapper 
-    img.bg-activity(src="./assets/images/bg-rope.png", alt="")
-    .container 
-      h3.section-des CÁch thức hoạt động
-      h2.section-title Các mô hình triển khai #[span Pitec]
+    img.element-activity(src="./assets/images/bg-rope.png", alt="")
+    .container.position-relative
+      img.bg-activity(src="./assets/images/bg-activity.png", alt="")
+      .section-main
+        h3.section-des CÁch thức hoạt động
+        h2.section-title Các mô hình triển khai #[span Pitec]
 
-      .activity-lists.d-flex.flex-wrap.justify-content-center
-        each item, index in dataActivity
-          .list-item
-            .list-number= `0${index + 1} ----`
-            h5.list-title= item.title 
+        .activity-lists.d-flex.flex-wrap.justify-content-center
+          each item, index in dataActivity
+            .list-item
+              .list-number= `0${index + 1} ----`
+              h5.list-title= item.title 
 
-            .lists-option
-              each list in item.lists
-                .option-item
-                  img(src="./assets/icons/icon-arrow-right-orange.svg", alt="")
-                  = list
+              .lists-option
+                each list in item.lists
+                  .option-item
+                    img(src="./assets/icons/icon-arrow-right-orange.svg", alt="")
+                    = list
 
